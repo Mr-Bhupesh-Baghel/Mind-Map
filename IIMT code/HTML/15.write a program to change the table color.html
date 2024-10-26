@@ -1,0 +1,59 @@
+<! write a program to change the table color.html>
+<html>
+<head>
+    <title>Change Table Color</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: darkblue;
+            color: white;
+            padding: 10px;
+        }
+
+      
+        td {
+            background-color: lightgray; 
+            padding: 10px;
+        }
+
+        tr:nth-child(even) td {
+            background-color: white;
+        }
+
+        th, td {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Styled Table</h2>
+    <table>
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+            <td>Data 3</td>
+        </tr>
+        <tr>
+            <td>Data 4</td>
+            <td>Data 5</td>
+            <td>Data 6</td>
+        </tr>
+        <tr>
+            <td>Data 7</td>
+            <td>Data 8</td>
+            <td>Data 9</td>
+        </tr>
+    </table>
+
+</body>
+</html>
