@@ -1,11 +1,20 @@
-<!write a prog. To show information type element using <CODE> & </CODE> tag html>
-<html lang="en">
+<!write a prog. To show information type element using CODE & /CODE tag html>
+<!DOCTYPE html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Element Type Info</title>
 </head>
 <body>
+    <h1>Click the button to see element information</h1>
     
+    <button onclick="showInfo()">Show Info</button>
+    <p id="info"></p>
+
+    <script>
+        function showInfo() {
+            const element = document.getElementById("info");
+            element.innerHTML = "This is a <code>&lt;p&gt;</code> element used to display text information.";
+        }
+    </script>
 </body>
 </html>
+
