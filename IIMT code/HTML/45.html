@@ -1,0 +1,26 @@
+<!write a prog. For form element to select an a value in drop down menu html>
+<html>
+<head>
+    <title>Dropdown Menu Example</title>
+    <script>
+        function displaySelectedValue() {
+            const dropdown = document.getElementById("dropdownMenu");
+            const selectedValue = dropdown.value;
+            document.getElementById("result").innerText = `You selected: ${selectedValue}`;
+        }
+    </script>
+</head>
+<body>
+    <h1>Select a Value from the Dropdown</h1>
+    <form>
+        <label for="dropdownMenu">Choose an option:</label>
+        <select id="dropdownMenu" onchange="displaySelectedValue()">
+            <option value="" disabled selected>Select an option</option>
+            <option value="Option 1">Option 1</option>
+            <option value="Option 2">Option 2</option>
+            <option value="Option 3">Option 3</option>
+        </select>
+    </form>
+    <p id="result" style="font-weight: bold;"></p>
+</body>
+</html>

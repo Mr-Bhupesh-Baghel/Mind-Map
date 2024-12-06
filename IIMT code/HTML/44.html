@@ -1,0 +1,27 @@
+<!write a prog. For form element a text value in a programme html>
+<html>
+<head>
+    <title>Form Example</title>
+    <script>
+        function displayTextValue() {
+            // Get the value of the text input
+            const textValue = document.getElementById("inputText").value;
+
+            // Display the value in an alert box
+            alert("You entered: " + textValue);
+
+            // Prevent form submission
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <h1>Enter Text in the Form</h1>
+    <form onsubmit="return displayTextValue()">
+        <label for="inputText">Enter something:</label>
+        <input type="text" id="inputText" name="inputText" required>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

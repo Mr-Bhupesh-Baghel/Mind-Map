@@ -1,0 +1,29 @@
+<!write a prog. For form element a check box in a programme html>
+<html>
+<head>
+    <title>Checkbox Example</title>
+    <script>
+        // Function to display checkbox status
+        function checkStatus() {
+            const checkbox = document.getElementById("agree");
+            if (checkbox.checked) {
+                alert("Checkbox is checked!");
+            } else {
+                alert("Checkbox is not checked!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Checkbox Example</h1>
+    <form>
+        <!-- Checkbox element -->
+        <label>
+            <input type="checkbox" id="agree"> I agree to the terms and conditions
+        </label><br><br>
+        
+        <!-- Button to trigger the status check -->
+        <button type="button" onclick="checkStatus()">Check Status</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!write a prog. To insert multiple image's  from any location in our programme html>
+<html>
+<head>
+        <title>Insert Multiple Images</title>
+    <style>
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .image-container img {
+            width: 200px;
+            height: auto;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gallery of Images</h1>
+    <div class="image-container">
+        <!-- Add your image paths in the src attributes below -->
+        <img src="images/image1.jpg" alt="Image 1">
+        <img src="images/image2.jpg" alt="Image 2">
+        <img src="images/image3.jpg" alt="Image 3">
+        <img src="images/image4.jpg" alt="Image 4">
+    </div>
+</body>
+</html>
